@@ -1,0 +1,14 @@
+{
+  "name": "frontend-build-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "test": "yarn build && karma start",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "@plumpnation/protomorph": "git://github.com/plumpNation/protomorph.git#v1.0.0"
+  }
+}
