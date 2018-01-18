@@ -5,10 +5,11 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --watch",
     "test": "yarn build && karma start",
     "lint": "eslint"
   },
   "devDependencies": {
-    "@plumpnation/protomorph": "git://github.com/plumpNation/protomorph.git#v1.0.0"
+    "@plumpnation/protomorph": "git://github.com/plumpNation/protomorph.git#v1.2.0"
   }
 }
