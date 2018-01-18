@@ -1,4 +1,4 @@
-import {expect} from '@plumpnation/protomorph/lib/SpecHelper';
+import {expect} from '@plumpnation/protomorph/lib/spec-helper';
 
 describe('dummy suite', () => {
     describe('methodName()', () => {
@@ -15,4 +15,6 @@ describe('dummy suite', () => {
     function testThatFails() {
         expect(true).to.not.equal(true);
     }
+
+    console.log('things');
 });
