@@ -3,6 +3,11 @@
  * Override configuration as you would any simple js object.
  */
 
-const baseConfig = require('@plumpnation/protomorph/karma.conf');
+const baseConfig = require('@plumpnation/protomorph/karma.conf.base');
+const overrides = {};
 
-module.exports = baseConfig;
+const overridenConfig = Object.assign({}, baseConfig, overrides);
+
+module.exports = function (config) {
+    config.set(overridenConfig);
+};
