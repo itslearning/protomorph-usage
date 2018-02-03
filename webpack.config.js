@@ -4,8 +4,7 @@
  */
 const baseConfig = require('@plumpnation/protomorph/webpack.config');
 
-// You can override the default webpack config here
-// const config = Object.assign({}, baseConfig, {
+// const overrides = {
 //     entry: {
 //         'index': './src/index.js',
 //         'viewName': [
@@ -13,6 +12,9 @@ const baseConfig = require('@plumpnation/protomorph/webpack.config');
 //             './src/some/thing/else.scss',
 //          ]
 //     }
-// });
+// };
 
-module.exports = baseConfig;
+// You can override the default webpack config here
+const config = Object.assign({}, baseConfig/*, overrides*/);
+
+module.exports = config;
