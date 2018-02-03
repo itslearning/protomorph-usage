@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@plumpnation/protomorph@git://github.com/plumpNation/protomorph.git#v2.0.0":
-  version "2.0.0"
-  resolved "git://github.com/plumpNation/protomorph.git#dc51b62ed7e00af24d3221f9108e193e0f751b73"
+"@plumpnation/protomorph@git://github.com/plumpNation/protomorph.git#v2.2.0":
+  version "2.2.0"
+  resolved "git://github.com/plumpNation/protomorph.git#42dcacd86be33addce844f5afd9aec2056480ff4"
   dependencies:
     chai "^4.1.2"
     clean-webpack-plugin "^0.1.17"
@@ -30,10 +30,11 @@
     karma-ie-launcher "^1.0.0"
     karma-mocha "^1.3.0"
     karma-mocha-reporter "^2.2.4"
-    mocha "^4.1.0"
+    mocha "^5.0.0"
     node-sass "^4.7.2"
     sass-lint "^1.12.1"
     sass-loader "^6.0.6"
+    sasslint-webpack-plugin "^1.0.4"
     svelte "^1.40.2"
     svelte-loader "^2.1.0"
     webpack "^3.6.0"
@@ -3276,7 +3277,7 @@ loader-runner@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.3.0.tgz#f482aea82d543e07921700d5a46ef26fdac6b8a2"
 
-loader-utils@^0.2.15:
+loader-utils@^0.2.15, loader-utils@~0.2.10:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
   dependencies:
@@ -3594,9 +3595,9 @@ mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   dependencies:
     minimist "0.0.8"
 
-mocha@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-4.1.0.tgz#7d86cfbcf35cb829e2754c32e17355ec05338794"
+mocha@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-5.0.0.tgz#cccac988b0bc5477119cba0e43de7af6d6ad8f4e"
   dependencies:
     browser-stdout "1.3.0"
     commander "2.11.0"
@@ -3733,6 +3734,27 @@ node-pre-gyp@^0.6.39:
     semver "^5.3.0"
     tar "^2.2.1"
     tar-pack "^3.4.0"
+
+node-sass@^3.3.3:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-3.13.1.tgz#7240fbbff2396304b4223527ed3020589c004fc2"
+  dependencies:
+    async-foreach "^0.1.3"
+    chalk "^1.1.1"
+    cross-spawn "^3.0.0"
+    gaze "^1.0.0"
+    get-stdin "^4.0.1"
+    glob "^7.0.3"
+    in-publish "^2.0.0"
+    lodash.assign "^4.2.0"
+    lodash.clonedeep "^4.3.2"
+    meow "^3.7.0"
+    mkdirp "^0.5.1"
+    nan "^2.3.2"
+    node-gyp "^3.3.1"
+    npmlog "^4.0.0"
+    request "^2.61.0"
+    sass-graph "^2.1.1"
 
 node-sass@^4.7.2:
   version "4.7.2"
@@ -3886,6 +3908,10 @@ oauth-sign@~0.8.1, oauth-sign@~0.8.2:
 object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+
+object-assign@~3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-3.0.0.tgz#9bedd5ca0897949bca47e7ff408062d549f587f2"
 
 object-component@0.0.3:
   version "0.0.3"
@@ -4803,7 +4829,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@2, request@^2.0.0, request@^2.74.0:
+request@2, request@^2.0.0, request@^2.61.0, request@^2.74.0:
   version "2.83.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.83.0.tgz#ca0b65da02ed62935887808e6f510381034e3356"
   dependencies:
@@ -5019,7 +5045,7 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@~5.1.0, 
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-sass-graph@^2.2.4:
+sass-graph@^2.1.1, sass-graph@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/sass-graph/-/sass-graph-2.2.4.tgz#13fbd63cd1caf0908b9fd93476ad43a51d1e0b49"
   dependencies:
@@ -5056,6 +5082,16 @@ sass-loader@^6.0.6:
     loader-utils "^1.0.1"
     lodash.tail "^4.1.1"
     pify "^3.0.0"
+
+sasslint-webpack-plugin@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/sasslint-webpack-plugin/-/sasslint-webpack-plugin-1.0.4.tgz#3f56a0b311f2697fea55832f92bb3db6d9f566d2"
+  dependencies:
+    chalk "^1.1.1"
+    loader-utils "~0.2.10"
+    node-sass "^3.3.3"
+    object-assign "~3.0.0"
+    text-table "^0.2.0"
 
 sax@~1.2.1:
   version "1.2.4"
@@ -5576,7 +5612,7 @@ tar@^2.0.0, tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
-text-table@~0.2.0:
+text-table@^0.2.0, text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
 
