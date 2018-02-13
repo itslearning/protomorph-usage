@@ -1,4 +1,4 @@
-import {expect} from '@plumpnation/protomorph/lib/spec-helper';
+import {expect} from '@itslearning/protomorph/lib/spec-helper';
 
 describe('dummy suite', () => {
     describe('methodName()', () => {

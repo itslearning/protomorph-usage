@@ -10,6 +10,6 @@
     "lint": "eslint"
   },
   "devDependencies": {
-    "@plumpnation/protomorph": "git://github.com/plumpNation/protomorph.git#v2.2.0"
+    "@itslearning/protomorph": "git://github.com/itslearning/protomorph.git#v2.2.1"
   }
 }

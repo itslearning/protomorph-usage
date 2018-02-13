@@ -2,7 +2,7 @@
  * Requires and exports the base config from protomorph.
  * Override configuration as you would any simple js object.
  */
-const baseConfig = require('@plumpnation/protomorph/webpack.config');
+const baseConfig = require('@itslearning/protomorph/webpack.config');
 
 // const overrides = {
 //     entry: {
